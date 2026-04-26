@@ -26,7 +26,7 @@ class Library {
             System.out.println("No books available.");
             return;
         }
-        System.out.println("\n--- All Books ---");
+        System.out.println("\n    All Books    ");
         for (int i = 0; i < books.size(); i++) {
             Book b = books.get(i);
             System.out.println((i + 1) + ". " + b.title + " by " + b.author +
@@ -77,10 +77,10 @@ public class LibraryManagement {
         Scanner sc = new Scanner(System.in);
         Library lib = new Library();
 
-        // Adding some default books
-        lib.addBook("The Alchemist", "Paulo Coelho");
+       
+        lib.addBook("Wings of Fire", "A.P.J. Abdul Kalam");
         lib.addBook("Harry Potter", "J.K. Rowling");
-        lib.addBook("Clean Code", "Robert Martin");
+        lib.addBook("Malgudi Days", "R.K. Narayan");
 
         while (true) {
             System.out.println("\n=== Library Management System ===");
